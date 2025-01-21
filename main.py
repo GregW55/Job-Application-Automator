@@ -166,7 +166,7 @@ browser = Browser(
 
 
 async def main():
-	location = "Oakdale, Newyork"
+	location = "YOUR LOCATION HERE"
 	apply_task = (
 	 	'You are a professional job researcher. '
 	 	'1. Read my resume with read_cv'
@@ -190,12 +190,11 @@ async def main():
 	tasks = [
 		# ground_task + '\n' + 'Start applying to jobs, or in the saved jobs file',
 		#apply_task
-		ground_task + '\n' + 'https://www.linkedin.com/jobs/search/?currentJobId=4119844312&distance=25&f_AL=true&f_WT=1%2C3&geoId=105241852&keywords=python%20developer&origin=JOB_SEARCH_PAGE_JOB_FILTER&refresh=true&spellCorrectionEnabled=true',
-		#ground_task + '\n' + 'https://www.indeed.com/',
+		ground_task + '\n' + 'https://www.indeed.com/',
 		# ground_task + '\n' + 'Microsoft',
 		# ground_task
 		# + '\n'
-		# + 'go to https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Taiwan%2C-Remote/Fulfillment-Analyst---New-College-Graduate-2025_JR1988949/apply/autofillWithResume?workerSubType=0c40f6bd1d8f10adf6dae42e46d44a17&workerSubType=ab40a98049581037a3ada55b087049b7 NVIDIA',
+		# + 'NVIDIA',
 		# ground_task + '\n' + 'Meta',
 	]
 	model = AzureChatOpenAI(
